@@ -4,8 +4,8 @@ from django.db import models
 
 
 class BlogPost(models.Model):
-    title = models.CharField(max_length=30)
-    post = models.CharField(max_length=9000)
+    title = models.CharField(max_length=250)
+    post = models.TextField()
 
     def __str__(self):
-        return f"User posted {self.title} with content {self.post}"
+        return self.title

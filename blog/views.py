@@ -13,7 +13,6 @@ class HomeView(TemplateView):
 
 class BlogPostView(FormView):
     form_class = BlogPostForm
-
     template_name = 'blog/new_post.html'
     success_url = reverse_lazy('blog:posts')
     def form_valid(self, form):
