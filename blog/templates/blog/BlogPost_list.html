@@ -1,10 +1,12 @@
-<h1>BLOG POSTS</h1>
+{% extends 'base.html' %} {% block content %}
+<h1>BLOG POSTS LIST</h1>
 
 <ul>
   {% for post in blog_posts %}
   <li>
-    <a href="">{{post.title}}</a>
+    <a href="/blog/posts/{{post.id}}">{{post.title}}</a>
     <p>{{post.post}}</p>
   </li>
   {% endfor %}
 </ul>
+{% endblock content %}

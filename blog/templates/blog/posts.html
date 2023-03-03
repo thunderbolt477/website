@@ -1,10 +1,12 @@
+{% comment %} {% extends 'base.html' %} {% block content %}
 <h1>BLOG POSTS</h1>
 
 <ul>
   {% for post in blog_posts %}
   <li>
-    <a href="">{{blog_posts.title}}</a>
+    <a href="/blog/BlogPost_detail/{{blog_post.id}}">{{blog_posts.title}}</a>
     <p>{{blog_posts.post}}</p>
   </li>
   {% endfor %}
 </ul>
+{% endblock content %} {% endcomment %}
