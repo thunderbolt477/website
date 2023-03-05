@@ -1,4 +1,17 @@
+header {
+  background-color: #a2b29f;
+  padding: 15px 5px 15px 5px;
+}
+
 body {
-  color: blue !important;
   text-align: center;
+  background-color: #f8ede3;
+}
+
+footer {
+  background-color: #f8ede3;
+}
+
+.navbar {
+  background-color: #a2b29f;
 }
